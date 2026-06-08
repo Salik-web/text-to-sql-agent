@@ -1,0 +1,17 @@
+[project]
+name = "sql-query"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-groq>=1.1.2",
+    "langchain-openai>=1.2.2",
+    "langgraph>=1.2.4",
+    "langsmith>=0.8.9",
+    "psycopg2-binary>=2.9.12",
+    "pymysql>=1.2.0",
+    "python-dotenv>=1.2.2",
+    "sqlalchemy>=2.0.50",
+    "tabulate>=0.10.0",
+]

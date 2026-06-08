@@ -1,0 +1,11 @@
+langgraph
+langchain-groq
+sqlalchemy
+python-dotenv
+langsmith
+tabulate
+psycopg2-binary
+pymysql
+fastapi
+uvicorn[standard]
+python-multipart

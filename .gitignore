@@ -1,0 +1,40 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# Secrets / environment (NEVER commit real keys)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+credentials.json
+secrets.json
+
+# Runtime data
+chat_history.db
+uploads/
+*.sqlite
+*.sqlite3
+
+# Node / frontend
+frontend/node_modules
+frontend/.next
+frontend/out
+npm-debug.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
