@@ -1,0 +1,17 @@
+.venv
+frontend
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+.env
+.env.*
+chat_history.db
+uploads
+sample.db
+*.sqlite
+*.sqlite3
+.vscode
+.idea
+DEPLOYMENT.md

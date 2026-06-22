@@ -1,4 +1,5 @@
 import json
+import os
 import uuid
 from pathlib import Path
 
@@ -19,9 +20,10 @@ UPLOAD_DIR.mkdir(exist_ok=True)
 MAX_UPLOAD_BYTES = 100 * 1024 * 1024
 SQLITE_MAGIC = b"SQLite format 3\x00"
 
+_origins = os.environ.get("ALLOWED_ORIGINS", "*")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"] if _origins == "*" else [o.strip() for o in _origins.split(",")],
     allow_methods=["*"],
     allow_headers=["*"],
 )
